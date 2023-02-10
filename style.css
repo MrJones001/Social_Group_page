@@ -1,0 +1,170 @@
+/* CSS RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --verified: rgb(113, 39, 82);
+    --box-background: hsl(274, 89%, 25%);
+    --white: white;
+    --span-background: rgb(134, 131, 131);
+    
+}
+body{
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+/* FIRST-DIV*/
+.review{
+    display: flex;
+    justify-content: space-between;
+}
+
+span{
+    display: block;
+    background-color: var(--span-background);
+    margin: 10px;
+    /* TOP RIGHT BOTTOM LEFT FORMAT */
+    padding: 10px 40px 10px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+.one{
+    position: relative;
+    right: 80px;
+}
+
+.two{
+  position: relative;
+  right: 40px;
+}
+
+/* SECOND DIVISION */
+.verified{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-content: center;
+}
+.four{
+    background-color: var(--verified);
+    height: 200px;
+    width: 500px;
+    position: relative;
+}
+
+.five{
+    background-color: var(--verified);
+    height: 200px;
+    width: 500px;
+    position: relative;
+    top: 20px;
+}
+.six{
+    background-color: var(--verified);
+    height: 200px;
+    width: 500px;
+    position: relative;
+    top: 40px;
+}
+img{
+    border-radius: 50px;
+    height: 50px;
+}
+.detail{
+    width: 200px;
+}
+
+h1{
+    color: var(--box-background);  
+    font-size: 30px;  
+    font-weight: 600;
+    margin-bottom: 15px;
+    
+}
+h2{
+    color: white;
+    font-size: larger;
+    position: relative;
+    bottom: 50px;
+    left: 70px;
+}
+h3{
+    color: rgb(241, 75, 103);
+    font-size: small;
+    position: relative;
+    bottom: 50px;
+    left: 70px;
+}
+p{
+    font-size: 12px;
+    font-weight: 600;
+}
+.verified p{
+  color: rgb(226, 222, 222);
+  align-content: center;
+  font-weight: 200;
+  font-style: oblique;
+}
+
+        /* MEDIA QUERIES */
+@media (max-width: 640px) {
+    .review{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    h1{
+        color: rgb(212, 9, 9);
+    }
+    p{
+        font-style: italic;
+        text-align: left;
+    }
+    span{
+        background-color: rgba(7, 7, 237, 0.543);
+    }
+    .one{
+        position: unset;
+    }
+    .two{
+        position: unset;
+    }
+    .verified{
+        flex-direction: column;
+        align-items: center;
+    }
+    .four{
+        height: 200px;
+        width: 300px;
+        position: unset;
+        background-color: rgb(234, 54, 54);
+    }
+    .five{
+        height: 200px;
+        width: 300px;
+        position: unset;
+        background-color: rgb(234, 54, 54);
+    }
+    .six{
+        height: 200px;
+        width: 300px;
+        position: unset;
+        background-color: rgb(234, 54, 54);
+    }
+    .verified p{
+        color: rgb(23, 25, 25);
+        font-weight: 500;
+    }
+    h2{
+        color: rgba(239, 231, 231, 0.908);
+    }
+    h3{
+        color: rgb(124, 7, 178);
+    }
+}
